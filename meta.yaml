@@ -1,0 +1,3 @@
+application-name: shared-app
+service-name: service-s
+service-dependencies: []
