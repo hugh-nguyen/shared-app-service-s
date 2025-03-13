@@ -1,14 +1,10 @@
-from flask import Flask, request, jsonify
-import requests
-from axon.integrations.flask import instrument_with_axon
+from flask import Flask, request
 
 app = Flask(__name__)
 
-instrument_with_axon(app)
-
-@app.route('/s/getresult/')
+@app.route('/getresult/')
 def get_result():
-    return {"result": 2}
+    return ["S=1"]
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=80)
