@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/getresult/')
 def get_result():
-    return ["S=0.0.2"]
+    return ["S=0.0.3"]
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=80)
